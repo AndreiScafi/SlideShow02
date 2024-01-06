@@ -19,6 +19,28 @@ html {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    top: 0;
+    right: 0;
+    animation: bannerAnim 3s linear forwards;
+}
+
+@keyframes bannerAnim {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -250%;
+    }
 }
 
 .banner h1 {
@@ -44,6 +66,17 @@ html {
     transform: perspective(50rem) rotateY(-15deg);
     text-shadow: .6rem .3rem .2rem rgba(0, 0, 0, .4);
     cursor: pointer;
+    animation: buttonAnim 1s 2.5s backwards;
+}
+
+@keyframes buttonAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .slideshow-wrapper {
