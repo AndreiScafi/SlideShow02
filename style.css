@@ -219,3 +219,33 @@ html {
 .content i {
     margin-left: .8rem;
 }
+
+@media(max-width: 1000px) {
+    .banner h1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .banner h1 {
+        font-size: 4rem;
+    }
+
+    .banner button {
+        width: 18rem;
+        padding: .7rem;
+        font-size: 2rem;
+    }
+
+    .content {
+        width: 30rem;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+}
