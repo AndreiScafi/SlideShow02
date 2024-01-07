@@ -10,7 +10,7 @@ html {
 .container {
     width: 100%;
     height: 100vh;
-    /* background-color: #000; */
+    background-color: #000;
 }
 
 .banner {
@@ -20,7 +20,6 @@ html {
     transform: translateX(-50%);
     text-align: center;
     overflow: hidden;
-    display: none;
 }
 
 .banner::after {
@@ -106,6 +105,9 @@ html {
 
 .slideshow-wrapper {
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
 }
 
 .slideshow {
