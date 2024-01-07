@@ -115,7 +115,6 @@ html {
     width: 400%;
     height: 100%;
     position: relative;
-    animation: slideshow 24s infinite;
 }
 
 @keyframes slideshow {
